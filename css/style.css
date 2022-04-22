@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary__color: hsl(30, 100%, 50%);
+}
+/* UTILITIES */
+.clearfix::after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  color: hsl(237, 95%, 15%);
+  font-size: 16px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+/* HEADER STYLES */
+header {
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.500) 50%, rgba(255, 254, 254, 0.5) 50%), url(/restaurant-site/assets/welcome_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navigation {
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 6em;
+  margin-left: 8em;
+}
+
+header a {
+  padding: 1em 0;
+}
+
+ul {
+  list-style: none;
+  margin-top: 3em;
+  margin-right: 6em;
+}
+
+li {
+  display: inline;
+  font-weight: 500;
+  margin-right: 4em;
+}
+
+header li:hover {
+  border-bottom: solid thin var(--primary__color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* WELCOME CONTAINER */
+.welcome {
+  width: 30%;
+  height: 40vh;
+  margin-top: 8em;
+  margin-left: 9em;
+}
+
+.heading {
+  display: block;
+  font-size: clamp(3em, 5em, 6em);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: .3em 0;
+  font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+}
+
+.search__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 4vh;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  padding-left: .7em;
+  margin-right: 0;
+  margin-bottom:2em;
+  border-radius: 6px 0 0 6px;
+}
+
+input {
+  width: 80%;
+  height: 4vh;
+  padding-left: .5em;
+  font-size: .8em;
+  border: none;
+  background-color: transparent;
+  border-radius: 6px 0 0 6px;
+}
+
+input::placeholder {
+  color: hsl(0, 0%, 80%);
+}
+
+input:focus {
+  color: var(--primary__color);
+  outline: hsl(30, 90%, 50%);
+}
+
+button {
+  width: 20%;
+  height: 4vh;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  background-color: var(--primary__color);
+  color: hsl(0, 0%, 100%);
+}
+
+.welcome span {
+  font-weight: 500;
+  margin-right: 2em;
+}
+
+/* DISCOVER CONTAINER */
+.discover {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.500) 50%, rgba(255, 254, 254, 0.5) 50%), url(/restaurant-site/assets/discover_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.discover__us {
+  width: 30%;
+  height: 45vh;
+  margin-right: 15em;
+}
+
+.lead__span {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: hsl(30, 100%, 50%);
+}
+
+.discover__us p {
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+
+.discover__btn {
+  height: 3vh;
+  padding: .5em 1em;
+  margin-top: 1em;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: var(--primary__color);
+}
+
+.right__arrow {
+  padding: .72em .7em;
+  border-radius: 0 6px 6px 0;
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(30, 90%, 50%, 0.600);
+}
+
+/* SPECIALTY CONTAINER */
+.specialty {
+  width:100%;
+  height: 70vh;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.specialty > p {
+  padding-top: 6em;
+}
+
+.order__menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end ;
+  width: 31%;
+  height: 4vh;
+  padding-left: 1.2em;
+  margin: auto;
+  border-bottom: solid thin hsl(9, 0%, 60%);
+}
+
+.order__menu ul {
+  margin: auto;
+}
+
+.order__menu li {
+  padding-bottom: .5em;
+  margin-bottom: 0em;
+  margin-left: 1.5em;
+}
+
+.order__menu li:hover {
+  color: var(--primary__color);
+  border-bottom: solid 2px var(--primary__color);
+  padding-bottom: 1.1em;
+}
+
+.menu__preview {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 35vh;
+  padding: 2em;
+  margin: 2em auto;
+}
+
+.preview__1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  height: 30vh;
+  border-radius: 9px;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 40%, 0.6) 50%, hsla(0, 0%, 40%, 0.6) 50%), url(/restaurant-site/assets/speciltiy_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dollar {
+  font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-top: 2em;
+}
+
+.rating {
+  margin: .5em 0;
+  color: hsl(51, 100%, 59%);
+}
+
+.meal {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.order__now {
+  width: 40%;
+  height: 3vh;
+  padding: 0 1.5em;
+  border-radius: 6px;
+  margin-top: 1em;
+}
+
+.preview__2 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 9px;
+  background-image: url(/restaurant-site/assets/specility_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.preview__3 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 9px;
+  background-image: url(/restaurant-site/assets/specility_3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.preview__4 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 9px;
+  background-image: url(/restaurant-site/assets/specility_4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* HOURS CONTAINER */
+.hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.8) 90%, hsla(0, 0%, 100%, 0.8) 10%),url(/restaurant-site/assets/hours_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.hours .fa-layers {
+  color: var(--primary__color);
+  padding-top: 5em;
+  padding-right: 9em;
+}
+
+.call {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.hours a {
+  font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+.schedule {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.week {
+  width: 20%;
+  height: 6vh;
+  margin: 3em;
+  font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+}
+
+.days {
+  display: block;
+  margin-bottom: .5em;
+}
+
+.times {
+  font-size: 1.5em;
+}
+/* MENU ITEMS CONTAINER */
+.menu__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height: 50vh;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 33vh;
+  margin-bottom: 3em;
+}
+
+.lg__dot {
+  color: var(--primary__color);
+}
+
+.sm__dots {
+  color: hsla(30, 90%, 50%, 0.3);
+  margin: 0 .5em;
+}
+
+.item__1 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 12px;
+  background-image: url(/restaurant-site/assets/hours_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item__2 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 12px;
+  background-image: url(/restaurant-site/assets/hours_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item__3 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 12px;
+  background-image: url(/restaurant-site/assets/hours_3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item__4 {
+  width: 15%;
+  height: 30vh;
+  border-radius: 12px;
+  background-image: url(/restaurant-site/assets/hours_4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 90%, 0.85) 50%, hsla(0, 0%, 90%, 0.85) 50%), url(/restaurant-site/assets/hours_next_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  order: 2;
+  width: 30%;
+  height: 40vh;
+  color: var(--primary__color);
+  border-radius: 12px;
+  background-image: url(/restaurant-site/assets/hours_4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video .fa-layers {
+  color: var(--primary__color);
+  padding-top: 5em;
+  padding-right: 9em;
+}
+
+.left__chevron {
+  order: 1;
+  justify-self: flex-start;
+}
+
+.right__chevron {
+  order: 3;
+  justify-self: flex-start;
+}
+
+.testimonial {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image:  url(/restaurant-site/assets/quote.svg);
+  background-color: hsl(0, 0%, 80%);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: 10em;
+}
+
+.test__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 50vh;
+  padding-top: 6em;
+}
+
+.test__content img {
+  width: 6%;
+  margin-bottom: 2em;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.profession {
+  font-weight: 100;
+  /* color: hsl(9, 0%, 60%); */
+}
+
+.description {
+  width: 40%;
+  text-align: center;
+  line-height: 2;
+  margin: 2em 0;
+}
