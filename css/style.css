@@ -38,7 +38,7 @@ body {
 /* HEADER STYLES */
 header {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.500) 50%, rgba(255, 254, 254, 0.5) 50%), url(/assets/welcome_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ button {
   justify-content: end;
   align-items: center;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.500) 50%, rgba(255, 254, 254, 0.5) 50%), url(/assets/discover_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -313,7 +313,7 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.8) 90%, hsla(0, 0%, 100%, 0.8) 10%),url(/assets/hours_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -365,7 +365,7 @@ button {
   align-items: center;
   justify-content: center;
   width:100%;
-  height: 50vh;
+  height: 60vh;
   background-color: hsl(0, 0%, 90%);
 }
 
@@ -431,7 +431,7 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-image: linear-gradient(to bottom, hsla(0, 0%, 90%, 0.85) 50%, hsla(0, 0%, 90%, 0.85) 50%), url(/assets/hours_next_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -471,7 +471,7 @@ button {
 
 .testimonial {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -489,7 +489,7 @@ button {
   justify-content: center;
   width: 60%;
   height: 50vh;
-  padding-top: 6em;
+  padding-top: 15em;
 }
 
 .test__content img {
