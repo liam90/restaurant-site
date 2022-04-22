@@ -475,8 +475,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-image:  url(/assets/quote.svg);
-  background-color: hsl(0, 0%, 80%);
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 90%, 0.85) 50%, hsla(0, 0%, 90%, 0.85) 50%), url(/assets/quote.svg);
+  background-color: hsl(0, 0%, 90%);
   background-position:center;
   background-repeat: no-repeat;
   background-size: 10em;
